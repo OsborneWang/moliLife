@@ -2,12 +2,12 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '@/components/Themed';
 
-export default function HealthScreen() {
+export default function SportsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>健康数据总览</Text>
+      <Text style={styles.title}>运动记录</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.subtitle}>步数、睡眠、心率、血氧、血压、压力、温度、生理周期</Text>
+      <Text style={styles.subtitle}>健身、跑步、登山、骑行</Text>
     </View>
   );
 }
