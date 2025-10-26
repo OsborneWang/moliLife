@@ -1,5 +1,6 @@
 import { Tabs } from "expo-router";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Image, View } from "react-native";
 
 import { useClientOnlyValue } from "@/components/useClientOnlyValue";
@@ -7,6 +8,7 @@ import { useColorScheme } from "@/components/useColorScheme";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const { t } = useTranslation();
 
   return (
     <Tabs
@@ -50,7 +52,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "健康",
+          title: t('tabs.health'),
           tabBarIcon: ({ focused }) => (
             <Image
               source={
@@ -67,7 +69,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="sports"
         options={{
-          title: "运动",
+          title: t('tabs.sports'),
           tabBarIcon: ({ focused }) => (
             <Image
               source={
@@ -84,7 +86,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="devices"
         options={{
-          title: "设备",
+          title: t('tabs.devices'),
           tabBarIcon: ({ focused }) => (
             <Image
               source={
@@ -101,7 +103,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: "我的",
+          title: t('tabs.profile'),
           tabBarIcon: ({ focused }) => (
             <Image
               source={

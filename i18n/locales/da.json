@@ -1,0 +1,46 @@
+{
+  "tabs": {
+    "health": "Sundhed",
+    "sports": "Sport", 
+    "devices": "Enheder",
+    "profile": "Profil"
+  },
+  "profile": {
+    "title": "Profil",
+    "username": "Jeg har chokolade",
+    "moreSettings": "Flere indstillinger",
+    "personalInfo": "Personlige oplysninger",
+    "unitSettings": "Enhedsindstillinger",
+    "userHelp": "Brugerhjælp",
+    "accountSecurity": "Konto og sikkerhed",
+    "smartControl": "Smart kontrol",
+    "appleHealth": "Apple Health",
+    "about": "Om",
+    "off": "Fra"
+  },
+  "settings": {
+    "moreSettings": "Flere indstillinger",
+    "languageSettings": "Sprogindstillinger",
+    "dataSync": "Datasynkronisering",
+    "dataExport": "Dataeksport",
+    "off": "Fra"
+  },
+  "languages": {
+    "zh-CN": "Forenklet kinesisk",
+    "en": "Engelsk",
+    "da": "Dansk", 
+    "de": "Tysk"
+  },
+  "health": {
+    "title": "Sundhedsoversigt",
+    "subtitle": "Skridt, søvn, puls, iltmætning, blodtryk, stress, temperatur, menstruationscyklus"
+  },
+  "sports": {
+    "title": "Sportsregistreringer",
+    "subtitle": "Fitness, løb, vandring, cykling"
+  },
+  "devices": {
+    "title": "Enhedsstyring", 
+    "subtitle": "Bluetooth-enhedsforbindelse, pulsmåling, iltmætningstest"
+  }
+}

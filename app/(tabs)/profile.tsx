@@ -2,6 +2,7 @@ import { Divider } from "@/components/Divider";
 import { Text, View } from "@/components/Themed";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { useRouter } from "expo-router";
+import { useTranslation } from "react-i18next";
 import { Image, ImageBackground, Pressable, ScrollView, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -38,6 +39,7 @@ const MenuItem = ({ img, title, showArrow = true, onPress }: MenuItemProps) => (
 export default function ProfileScreen() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
+  const { t } = useTranslation();
   
   return (
     <ScrollView 
@@ -55,21 +57,21 @@ export default function ProfileScreen() {
             source={require("@/assets/profile/avatar-default.png")} 
             style={styles.avatar}
           />
-          <Text style={styles.username}>测试用户</Text>
+          <Text style={styles.username}>{t('profile.username')}</Text>
         </View>
       </ImageBackground>
       
       {/* 菜单列表 */}
       <View style={styles.menuContainer}>
-        <MenuItem title="更多设置" img="more.png" onPress={()=>router.navigate('/profileFolder/moreSetting')}/>
+        <MenuItem title={t('profile.moreSettings')} img="more.png" onPress={()=>router.navigate('/profileFolder/moreSetting')}/>
         <Divider />
-        <MenuItem title="个人信息" img="info.png" />
+        <MenuItem title={t('profile.personalInfo')} img="info.png" />
         <Divider />
-        <MenuItem title="单位设置" img="dept.png" />
+        <MenuItem title={t('profile.unitSettings')} img="dept.png" />
         <Divider />
-        <MenuItem title="用户帮助" img="help.png" />
+        <MenuItem title={t('profile.userHelp')} img="help.png" />
         <Divider />
-        <MenuItem title="账户与安全" img="account.png" />
+        <MenuItem title={t('profile.accountSecurity')} img="account.png" />
         <Divider />
 
         {/* 智能控制 - 特殊样式 */}
@@ -79,17 +81,17 @@ export default function ProfileScreen() {
               source={require("@/assets/profile/control.png")}
               style={{ width: 28, height: 28 }}
             />
-            <Text style={styles.menuText}>智能控制</Text>
+            <Text style={styles.menuText}>{t('profile.smartControl')}</Text>
           </View>
           <View style={styles.switchContainer}>
-            <Text style={styles.switchText}>关</Text>
+            <Text style={styles.switchText}>{t('profile.off')}</Text>
           </View>
         </Pressable>
         <Divider />
 
-        <MenuItem title="苹果健康" img="appleHealth.png" />
+        <MenuItem title={t('profile.appleHealth')} img="appleHealth.png" />
         <Divider />
-        <MenuItem title="关于" img="about.png" />
+        <MenuItem title={t('profile.about')} img="about.png" />
       </View>
     </ScrollView>
   );

@@ -1,0 +1,46 @@
+{
+  "tabs": {
+    "health": "Health",
+    "sports": "Sports", 
+    "devices": "Devices",
+    "profile": "Profile"
+  },
+  "profile": {
+    "title": "Profile",
+    "username": "I have chocolate",
+    "moreSettings": "More Settings",
+    "personalInfo": "Personal Info",
+    "unitSettings": "Unit Settings",
+    "userHelp": "User Help",
+    "accountSecurity": "Account & Security",
+    "smartControl": "Smart Control",
+    "appleHealth": "Apple Health",
+    "about": "About",
+    "off": "Off"
+  },
+  "settings": {
+    "moreSettings": "More Settings",
+    "languageSettings": "Language Settings",
+    "dataSync": "Data Sync",
+    "dataExport": "Data Export",
+    "off": "Off"
+  },
+  "languages": {
+    "zh-CN": "Simplified Chinese",
+    "en": "English",
+    "da": "Danish", 
+    "de": "German"
+  },
+  "health": {
+    "title": "Health Overview",
+    "subtitle": "Steps, Sleep, Heart Rate, Blood Oxygen, Blood Pressure, Stress, Temperature, Menstrual Cycle"
+  },
+  "sports": {
+    "title": "Sports Records",
+    "subtitle": "Fitness, Running, Hiking, Cycling"
+  },
+  "devices": {
+    "title": "Device Management", 
+    "subtitle": "Bluetooth Device Connection, Heart Rate Test, Blood Oxygen Test"
+  }
+}

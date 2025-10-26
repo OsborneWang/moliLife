@@ -1,0 +1,46 @@
+{
+  "tabs": {
+    "health": "健康",
+    "sports": "运动", 
+    "devices": "设备",
+    "profile": "我的"
+  },
+  "profile": {
+    "title": "我的",
+    "username": "我有巧克力",
+    "moreSettings": "更多设置",
+    "personalInfo": "个人信息",
+    "unitSettings": "单位设置",
+    "userHelp": "用户帮助",
+    "accountSecurity": "账户与安全",
+    "smartControl": "智能控制",
+    "appleHealth": "苹果健康",
+    "about": "关于",
+    "off": "关"
+  },
+  "settings": {
+    "moreSettings": "更多设置",
+    "languageSettings": "语言设置",
+    "dataSync": "数据同步",
+    "dataExport": "数据导出",
+    "off": "关"
+  },
+  "languages": {
+    "zh-CN": "简体中文",
+    "en": "英语",
+    "da": "丹麦语", 
+    "de": "德语"
+  },
+  "health": {
+    "title": "健康数据总览",
+    "subtitle": "步数、睡眠、心率、血氧、血压、压力、温度、生理周期"
+  },
+  "sports": {
+    "title": "运动记录",
+    "subtitle": "健身、跑步、登山、骑行"
+  },
+  "devices": {
+    "title": "设备管理", 
+    "subtitle": "蓝牙设备连接、测试心率、测试血氧"
+  }
+}

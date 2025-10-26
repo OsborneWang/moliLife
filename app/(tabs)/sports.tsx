@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native';
 
 import { Text, View } from '@/components/Themed';
 
 export default function SportsScreen() {
+  const { t } = useTranslation();
+  
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>运动记录</Text>
+      <Text style={styles.title}>{t('sports.title')}</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text style={styles.subtitle}>健身、跑步、登山、骑行</Text>
+      <Text style={styles.subtitle}>{t('sports.subtitle')}</Text>
     </View>
   );
 }

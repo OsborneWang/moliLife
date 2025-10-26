@@ -1,5 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Stack, router } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet } from 'react-native';
 
 import { Divider } from '@/components/Divider';
@@ -23,6 +24,8 @@ const MenuItem = ({ title, showArrow = true, rightText, onPress }: MenuItemProps
 );
 
 export default function MoreSettingScreen() {
+  const { t } = useTranslation();
+  
   const handleLanguageSetting = () => {
     // 处理语言设置点击
     router.push('/profileFolder/languageSetting');
@@ -42,7 +45,7 @@ export default function MoreSettingScreen() {
     <>
       <Stack.Screen
         options={{
-          title: '更多设置',
+          title: t('settings.moreSettings'),
           headerBackTitle: '',
           headerLeft: () => (
             <Pressable
@@ -67,18 +70,18 @@ export default function MoreSettingScreen() {
         <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
           <View style={styles.menuContainer}>
             <MenuItem 
-              title="语言设置" 
+              title={t('settings.languageSettings')} 
               onPress={handleLanguageSetting}
             />
             <Divider />
             <MenuItem 
-              title="数据同步" 
-              rightText="关"
+              title={t('settings.dataSync')} 
+              rightText={t('settings.off')}
               onPress={handleDataSync}
             />
             <Divider />
             <MenuItem 
-              title="数据导出" 
+              title={t('settings.dataExport')} 
               onPress={handleDataExport}
             />
           </View>

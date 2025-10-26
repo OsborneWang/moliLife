@@ -1,6 +1,7 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Stack, router } from 'expo-router';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet } from 'react-native';
 
 import { Divider } from '@/components/Divider';
@@ -25,16 +26,18 @@ const LanguageItem = ({ englishName, localName, isSelected = false, onPress }: L
 
 export default function LanguageSettingScreen() {
   const [selectedLanguage, setSelectedLanguage] = React.useState('zh-CN');
+  const { t, i18n } = useTranslation();
 
   const languages = [
-    { code: 'zh-CN', englishName: '繁體中文', localName: '繁体中文' },
-    { code: 'en', englishName: 'English', localName: '英语' },
-    // { code: 'da', englishName: 'dansk', localName: '丹麦语' },
-    // { code: 'de', englishName: 'Deutsch', localName: '德语' },
+    { code: 'zh-CN', englishName: '简体中文', localName: t('languages.zh-CN') },
+    { code: 'en', englishName: 'English', localName: t('languages.en') },
+    { code: 'da', englishName: 'dansk', localName: t('languages.da') },
+    { code: 'de', englishName: 'Deutsch', localName: t('languages.de') },
   ];
 
   const handleLanguageChange = (languageCode: string) => {
     setSelectedLanguage(languageCode);
+    i18n.changeLanguage(languageCode); // 切换语言
     console.log('language:', languageCode);
   };
 
@@ -42,7 +45,7 @@ export default function LanguageSettingScreen() {
     <>
       <Stack.Screen
         options={{
-          title: '语言设置',
+          title: t('settings.languageSettings'),
           headerBackTitle: '',
           headerLeft: () => (
             <Pressable
