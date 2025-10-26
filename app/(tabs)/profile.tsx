@@ -1,13 +1,9 @@
+import { Divider } from "@/components/Divider";
+import { Text, View } from "@/components/Themed";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { useRouter } from "expo-router";
 import { Image, ImageBackground, Pressable, ScrollView, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-
-import { Text, View } from "@/components/Themed";
-
-// 分割线组件
-const Divider = () => (
-  <View style={styles.divider} />
-);
 
 interface MenuItemProps {
   img: string;
@@ -41,6 +37,7 @@ const MenuItem = ({ img, title, showArrow = true, onPress }: MenuItemProps) => (
 
 export default function ProfileScreen() {
   const insets = useSafeAreaInsets();
+  const router = useRouter();
   
   return (
     <ScrollView 
@@ -64,7 +61,7 @@ export default function ProfileScreen() {
       
       {/* 菜单列表 */}
       <View style={styles.menuContainer}>
-        <MenuItem title="更多设置" img="more.png" />
+        <MenuItem title="更多设置" img="more.png" onPress={()=>router.navigate('/profileFolder/moreSetting')}/>
         <Divider />
         <MenuItem title="个人信息" img="info.png" />
         <Divider />
@@ -151,11 +148,6 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: "80%",
-  },
-  divider: {
-    height: 0.5,
-    backgroundColor: "#E5E5E5",
-    marginHorizontal: 10,
   },
   headerContainer: {
     flex: 1,
