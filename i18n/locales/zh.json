@@ -21,15 +21,14 @@
   "settings": {
     "moreSettings": "更多设置",
     "languageSettings": "语言设置",
+    "unitSettings": "单位设置",
     "dataSync": "数据同步",
     "dataExport": "数据导出",
     "off": "关"
   },
   "languages": {
     "zh-CN": "简体中文",
-    "en": "英语",
-    "da": "丹麦语", 
-    "de": "德语"
+    "en": "英语"
   },
   "health": {
     "title": "健康数据总览",
@@ -42,5 +41,15 @@
   "devices": {
     "title": "设备管理", 
     "subtitle": "蓝牙设备连接、测试心率、测试血氧"
+  },
+  "units": {
+    "distanceSelection": "单位选择",
+    "temperature": "温度",
+    "kilometer": "千米",
+    "mile": "英里",
+    "saveHint": "单位选择将影响设备单位选择"
+  },
+  "common": {
+    "save": "保存"
   }
 }

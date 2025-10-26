@@ -31,8 +31,6 @@ export default function LanguageSettingScreen() {
   const languages = [
     { code: 'zh-CN', englishName: '简体中文', localName: t('languages.zh-CN') },
     { code: 'en', englishName: 'English', localName: t('languages.en') },
-    { code: 'da', englishName: 'dansk', localName: t('languages.da') },
-    { code: 'de', englishName: 'Deutsch', localName: t('languages.de') },
   ];
 
   const handleLanguageChange = (languageCode: string) => {

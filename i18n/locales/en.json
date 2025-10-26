@@ -21,15 +21,14 @@
   "settings": {
     "moreSettings": "More Settings",
     "languageSettings": "Language Settings",
+    "unitSettings": "Unit Settings",
     "dataSync": "Data Sync",
     "dataExport": "Data Export",
     "off": "Off"
   },
   "languages": {
     "zh-CN": "Simplified Chinese",
-    "en": "English",
-    "da": "Danish", 
-    "de": "German"
+    "en": "English"
   },
   "health": {
     "title": "Health Overview",
@@ -42,5 +41,15 @@
   "devices": {
     "title": "Device Management", 
     "subtitle": "Bluetooth Device Connection, Heart Rate Test, Blood Oxygen Test"
+  },
+  "units": {
+    "distanceSelection": "Distance Selection",
+    "temperature": "Temperature",
+    "kilometer": "Kilometer",
+    "mile": "Mile",
+    "saveHint": "Unit selection will affect device unit selection"
+  },
+  "common": {
+    "save": "Save"
   }
 }
