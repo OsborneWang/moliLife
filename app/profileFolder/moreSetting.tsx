@@ -31,11 +31,6 @@ export default function MoreSettingScreen() {
     router.push('/profileFolder/languageSetting');
   };
 
-  const handleUnitSetting = () => {
-    // 处理单位设置点击
-    router.push('/profileFolder/unitSetting');
-  };
-
   const handleDataSync = () => {
     // 处理数据同步点击
     console.log('数据同步');
@@ -77,11 +72,6 @@ export default function MoreSettingScreen() {
             <MenuItem 
               title={t('settings.languageSettings')} 
               onPress={handleLanguageSetting}
-            />
-            <Divider />
-            <MenuItem 
-              title={t('settings.unitSettings')} 
-              onPress={handleUnitSetting}
             />
             <Divider />
             <MenuItem 

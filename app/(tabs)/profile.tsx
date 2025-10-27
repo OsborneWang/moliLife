@@ -67,7 +67,7 @@ export default function ProfileScreen() {
         <Divider />
         <MenuItem title={t('profile.personalInfo')} img="info.png" />
         <Divider />
-        <MenuItem title={t('profile.unitSettings')} img="dept.png" />
+        <MenuItem title={t('profile.unitSettings')} img="dept.png" onPress={()=>router.navigate('/profileFolder/unitSetting')} />
         <Divider />
         <MenuItem title={t('profile.userHelp')} img="help.png" />
         <Divider />
